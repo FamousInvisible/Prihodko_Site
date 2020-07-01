@@ -1,0 +1,368 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+A:link { 
+  text-decoration: none;
+  color: black;
+} 
+A:visited { text-decoration: none; color: black;} 
+A:active { text-decoration: none; color: black;}
+A:hover {
+text-decoration: underline;
+} 
+header{
+  width: 100vw;
+    background: linear-gradient(180deg, #B600A4 0%, #010049 100%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.81);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+nav div{
+    width: 15vw;
+    height: 2vw;
+    border-radius: 0px 0px 50px 50px; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 2vw;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+nav div:hover{
+    height: 4vw;
+}
+#Main{
+    background: #FF0000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+#For_abiturent{
+    background: #FF6B00;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+#About_Us{
+    background: #FAFF00;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+#News{
+    background: #00FF19;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+#Contact{
+    background: #00B2FF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+#Links{
+    background: #BD00FF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.85);
+}
+footer{
+  width: 100vw;
+    background: linear-gradient(180deg, #B600A4 0%, #010049 100%);
+    display: flex;
+    font-size: 1vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.right-content{
+    width: 40vw;
+    text-align: center;
+    color:white;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+    width: 90vw;
+}
+
+#burger-menu{
+  display: none;
+}
+#close-menu{
+  display: none;
+}
+/*Я люблю кота*/
+.slider {
+    width:50vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+  }
+
+  .slider__control_left {
+    left: 0;
+    z-index: 2;
+  }
+
+  .slider__control_right {
+    right: 0;
+    z-index: 2;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_left::before {
+    background-image: url("image/slider/left_arrow.png");
+  }
+
+  .slider__control_right::before {
+    background-image: url("image/slider/right-arrow.png");
+  }
+
+  .slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .content1{
+      background: linear-gradient(179.24deg, rgba(254, 242, 242, 0) 1.54%, #FEF2F2 47.3%, rgba(254, 242, 242, 0) 87.67%);
+      text-align: center;
+      font-size: 3vw;
+      width: 60vw;
+      padding: 3vw 0.4vw;
+  }
+  .content2{
+    background: linear-gradient(180deg, rgba(238, 224, 224, 0) 1.56%, #EEE0E0 49.48%, rgba(238, 224, 224, 0) 100%);
+    text-align: center;
+    font-size: 3vw;
+    width: 60vw;
+    padding: 3vw 0.4vw;
+}
+.content3{
+    background: linear-gradient(180deg, rgba(221, 193, 193, 0) 0%, #DDC1C1 48.44%, rgba(221, 193, 193, 0) 100%);
+    text-align: center;
+    font-size: 3vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3vw 0.4vw;
+}
+.gov-buttons{
+    margin: 1vw 0.6vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 16vw;
+    height: 10vw;
+    font-size: 1.5vw;
+    background: white;
+    border-radius: 20px;
+}
+#buttons1{
+  border: 8px solid #FF0000;
+}
+#buttons2{
+  border: 8px solid #FF7A00;
+}
+#buttons3{
+  border: 8px solid #FAFF00;
+}
+#buttons4{
+  border: 8px solid #00FF19;
+}
+#buttons5{
+  border: 8px solid #00B2FF;
+}
+@media screen and (max-width: 1024px){
+  header{
+    font-size:1.8vw;
+  }
+  header img{
+    width:10vw;
+  }
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  
+  }
+  .left-content{
+    font-size:4vw;
+  }
+  .right-content{
+    display: none;
+  }
+  nav{
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  nav div{
+    width: 40vw;
+    height: 4vw;
+    border-radius: 50px; 
+    margin: 1vw;
+    font-size: 5vw;
+  }
+  nav div:hover{
+    height: 4vw;
+  }
+  .slider {
+    width:95vw;
+    position: relative;
+    overflow: hidden;
+  }
+  .content1{
+    font-size: 5vw;
+    width: 100vw;
+  }
+  .content2{
+    font-size: 4vw;
+    width: 100vw;
+  }
+  .content3{
+    font-size: 5vw;
+    width: 100vw;
+  }
+  .gov-buttons{
+    width: 45vw;
+    height: 25vw;
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 600px){
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size:2vw;
+  }
+  nav div{
+    width: 60vw;
+    height: 10vw;
+    border-radius: 50px; 
+    margin: 1vw;
+    font-size: 7vw;
+  }
+  nav div:hover{
+    height: 10vw;
+  }
+  #burger-menu{
+    width:23vw;
+    height:23vw;
+    border-radius:0px;
+    display: block;
+  }
+  #close-menu{
+    width:23vw;
+    height:23vw;
+    border-radius:0px;
+  }
+  #Main{
+    display: none;
+  }
+  #For_abiturent{
+      display: none;
+  }
+  #About_Us{
+      display: none;
+  }
+  #News{
+      display: none;
+  }
+  #Contact{
+      display: none;
+  }
+  #Links{
+      display: none;
+  }
+  header img{
+    width:10vw;
+  }
+  .content1{
+    font-size: 6vw;
+    width: 100vw;
+  }
+  .content2{
+    font-size: 5vw;
+    width: 100vw;
+  }
+  .content2 img{
+    width:30vw;
+  }
+  .slider img{
+    width:95vw;
+  }
+  footer img{
+    width:10vw
+  }
+  .gov-buttons{
+    width: 90vw;
+    height: 35vw;
+    font-size: 5vw;
+  }
+}
+
